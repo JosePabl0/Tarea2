@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Tipo de cambio";
+}
+
+<div id="exchangeRateWidget" class="exchange-rate-widget">
+    <h5>Tipo de cambio</h5>
+    <p class="exchange-rate-subtitle">Referencia en colones costarricenses</p>
+
+    <div class="exchange-rate-row">
+        <span class="exchange-rate-label">Dólar compra</span>
+        <span id="exchangeRateBuy" class="exchange-rate-value">Cargando...</span>
+    </div>
+
+    <div class="exchange-rate-row">
+        <span class="exchange-rate-label">Dólar venta</span>
+        <span id="exchangeRateSell" class="exchange-rate-value">Cargando...</span>
+    </div>
+
+    <div class="exchange-rate-row">
+        <span class="exchange-rate-label">Euro</span>
+        <span id="exchangeRateEuro" class="exchange-rate-value">Cargando...</span>
+    </div>
+
+    <p id="exchangeRateStatus" class="exchange-rate-status">
+        Consultando tipo de cambio...
+    </p>
+</div>

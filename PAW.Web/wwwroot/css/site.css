@@ -1,0 +1,93 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.exchange-rate-widget {
+    position: fixed;
+    top: 82px;
+    right: 20px;
+    z-index: 1050;
+    width: 280px;
+    padding: 18px;
+    color: #eaf2ff;
+    background: linear-gradient(145deg, #17243b, #0b1220);
+    border: 1px solid rgba(106, 166, 255, 0.35);
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+    .exchange-rate-widget h5 {
+        margin: 0 0 12px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .exchange-rate-widget .exchange-rate-subtitle {
+        margin-bottom: 12px;
+        color: #a8bbd8;
+        font-size: 12px;
+    }
+
+    .exchange-rate-widget .exchange-rate-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+        .exchange-rate-widget .exchange-rate-row:last-child {
+            border-bottom: none;
+        }
+
+    .exchange-rate-widget .exchange-rate-label {
+        color: #c0cde0;
+    }
+
+    .exchange-rate-widget .exchange-rate-value {
+        color: #72d6b1;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    .exchange-rate-widget .exchange-rate-status {
+        margin-top: 10px;
+        color: #a8bbd8;
+        font-size: 11px;
+    }
+
+    .exchange-rate-widget .exchange-rate-error {
+        color: #ffb4b4;
+    }
+
+@media (max-width: 767px) {
+    .exchange-rate-widget {
+        top: 75px;
+        right: 10px;
+        width: min(280px, calc(100vw - 20px));
+        padding: 14px;
+    }
+}
